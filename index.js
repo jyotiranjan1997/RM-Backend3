@@ -12,7 +12,6 @@ app.use(cors());
 app.use("/user", userRoute);
 app.use("/job", jobRoute);
 
-
 app.listen(process.env.PORT || 4000, async () => {
   await connect();
   console.log("listenting...");
